@@ -161,14 +161,14 @@ footer {
     cursor: pointer;
 }
 
-#dark-mode img {
-    width: 1.8vw;
-    height: 1.8vw;
+#dark-mode svg {
+    width: 2vw;
+    height: 2vw;
 }
 
 #git img {
-    width: 3vw;
-    height: 3vw;
+    width: 3.4vw;
+    height: 3.4vw;
 }
 
 #jekyll img {
@@ -192,6 +192,7 @@ footer {
     justify-content: center;
     align-items: center;
     transition: all 0.1s ease;
+    padding: 0;
 }
 
 .button-container button:hover {
@@ -245,6 +246,7 @@ footer {
     grid-row: 2;
     white-space: nowrap;
     justify-self: start;
+    color: var(--blue);
 }
 
 .type03 {
@@ -613,7 +615,7 @@ footer {
     font-size: 1.1vw;
 
     width: 25%;
-    padding: 0.5rem 1rem;
+    padding: 0.5vw 1vw;
     border-radius: 0.5vw;
     transition: all 0.1s ease;
 }
@@ -773,6 +775,7 @@ footer {
     font-size: 1.5vw;
     border: none;
     transition: all 0.2s ease;
+    padding: 0;
 }
 
 .popup-close:hover {
@@ -843,6 +846,11 @@ footer {
     background-color: black;
 }
 
+.link-demo .insta-icon {
+    transform: none;  
+    width: 1.4vw;
+    height: 1.4vw;
+}
 
 .detail-title {
     font-size: 0.9vw;
