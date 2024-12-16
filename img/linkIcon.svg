@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <!-- 오른쪽 위 링크 -->
+    <path
+            d="M14 7 L17 7 A5 5 0 0 1 17 17 L14 17"
+            fill="none"
+            stroke="white"
+            stroke-width="2.2"
+            stroke-linecap="round"
+    />
+
+    <!-- 왼쪽 아래 링크 -->
+    <path
+            d="M10 17 L7 17 A5 5 0 0 1 7 7 L10 7"
+            fill="none"
+            stroke="white"
+            stroke-width="2.2"
+            stroke-linecap="round"
+    />
+</svg>

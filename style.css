@@ -1,0 +1,848 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css');
+@import url('https://fonts.cdnfonts.com/css/termina-test');
+
+body {
+    font-family: 'pretendard', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white-bg);
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth; /* 부드러운 스크롤 효과 추가 */
+}
+
+.container{
+    width:80vw;
+    margin-top: 2.5vw;
+    margin-left: 17vw;
+    position: relative;
+}
+
+:root {
+    /* 기본 컬러 팔레트 */
+    --white-bg: #f5f5f5;
+    --white: #ffffff;
+    --black-bg: #121212;
+    --black-2: #212121;
+    --black: #000000;
+    --gray: #EDEFF3;
+    --gray-2: #444648;
+    --gray-3: #e5e6ea;
+    --neon: #B9FE04;
+    --blue: #3E5CF8;
+}
+
+.dark-mode {
+    --white-bg: #101010;
+    --white: #000000;
+    --black-bg: #f5f5f5;
+    --black-2: #ffffff;
+    --black: #ffffff;
+    --gray: #212121;
+    --gray-2: #aaaaaa;
+    --gray-3: #212121;
+    --blue: #FF1DA1;
+}
+
+.one-scrollContainer{
+    width: 60vw;
+    color: var(--black);
+}
+
+footer{
+    font-size: 0.95vw;
+    margin-bottom: 2vw;
+}
+
+
+.sidebar {
+    /*border-right: 0.15vw solid var(--blue);*/
+    /*padding-right: 1.5vw;*/
+    width: 13vw;
+    height: 92vh;
+    position: fixed;
+    right: 2.5vw;
+    top: 2.5vw;
+    color: var(--black);
+}
+
+.sidebar-profile{
+    margin-top: 1.5vw;
+}
+
+.profile-img{
+    background-color: var(--white);
+    color: var(--black-2);
+    border: 0.15vw solid var(--blue);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 2.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.profile-name{
+    font-family: "Termina Test", sans-serif;
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin-bottom: 1.5vw;
+}
+
+.profile-txt{
+    font-weight: 300;
+    font-size: 0.95vw;
+    margin-bottom: 0.5vw;
+    line-height: 1.5vw;
+}
+
+.bold{
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    margin-top: 5vw;
+    line-height: 0.9vw;
+    font-size: 1vw;
+}
+
+.sidebar-menu a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.sidebar-menu a:hover{
+    color: var(--blue);
+}
+
+.button-container{
+    position: absolute;
+    bottom: 1.5vw;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.topBtn{
+    width: 2.2vw;
+    height: 2.2vw;
+    font-size: 0.8vw;
+    background-color: white;
+    color: black;
+    margin-right: 0.5vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease;
+}
+
+.topBtn a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.topBtn:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    outline: 0.12vw solid var(--blue);
+    color: var(--blue);
+}
+
+#dark-mode img{
+    width: 1.8vw;
+    height: 1.8vw;
+}
+
+#git img{
+    width: 3vw;
+    height: 3vw;
+}
+
+#jekyll img{
+    width: 3vw;
+    height: 3vw;
+}
+
+#sendMail img{
+    width: 3vw;
+    height: 3vw;
+}
+
+.button-container button{
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    margin-right: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease;
+}
+
+.button-container button:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 0.12vw solid var(--blue);
+}
+
+.mainTxt{
+    display: flex;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mainType{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    width: fit-content;
+}
+
+.type{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 3.2vw;
+    font-weight: 600;
+}
+
+.type01 {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+}
+
+.type sup {
+    position: relative;
+    top: -3.7vw;
+    right: -4.5vw;
+}
+
+.circle {
+    width: 0.65vw;
+    height: 0.65vw;
+    border-radius: 50%;
+    background-color: var(--blue);
+}
+
+.type02 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    white-space: nowrap;
+    justify-self: start;
+}
+
+.type03 {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+}
+
+.type04 {
+    grid-column: 2;
+    grid-row: 4;
+    white-space: nowrap;
+    justify-self: start;
+}
+
+.type05{
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    white-space: nowrap;
+    justify-self: start;
+    margin-top: 2vw;
+    font-size: 0.94vw;
+}
+
+.color{
+    color: var(--blue);
+    border-bottom: 0.1vw solid var(--blue);
+}
+
+.myPhoto {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.myPhoto img {
+    width: 9.6vw;
+    margin-bottom: 4vw;
+}
+
+
+
+.aboutMe{
+    padding: 5vw 0;
+}
+
+.about-title {
+    color: var(--black);
+    border-bottom: 0.085vw solid var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5vw;
+}
+
+.about-title p{
+    font-size: 1.8vw;
+    font-weight: 600;
+    line-height: 0;
+}
+
+.resume {
+    padding: 0.5vw 1vw;
+    background-color: var(--black-2);
+    color: var(--white);
+    border-radius: 5vw;
+    transition: all 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.9vw;
+}
+
+.resume:hover{
+    background-color: var(--blue);
+    color: white;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 70%;
+    gap: 3vw;
+    margin-top: 2.5vw;
+}
+
+.aboutT{
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+.aboutC{
+    line-height: 1.8vw;
+    font-size: 1vw;
+}
+
+.about06 a{
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.about06 a:hover{
+    background-color: var(--blue);
+    color: white;
+}
+
+.aT{
+    margin-bottom: 0.5vw;
+    font-weight: 500;
+}
+
+.aC{
+    display: flex;
+    font-weight: 600;
+    /*justify-content: space-between;*/
+    color: var(--blue);
+}
+
+.aC0{
+    background-color: var(--gray);
+    border-radius: 0.5vw;
+    padding: 0 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.skill{
+    padding: 5vw 0;
+}
+
+.menu-title{
+    color: var(--black);
+    border-bottom: 0.085vw solid var(--black);
+    padding-bottom: 1.5vw;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5vw;
+    margin-top: 2.5vw;
+}
+
+.skill-item {
+    background-color: var(--gray);
+    height: 4vw;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skillTxt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skillTxt p{
+    margin: 0;
+}
+
+.skillT{
+    font-weight: 500;
+    font-size: 1vw;
+    color: var(--blue);
+}
+
+.skillC{
+    font-weight: 400;
+    font-size: 0.8vw;
+    color: #aaaaaa;
+}
+
+.skill-range{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 0.09vw solid var(--black-2);
+    height: 1.5vw;
+    background-color: var(--blue);
+    border-radius: 0.3vw;
+}
+
+.range{
+    border-left: 0.09vw solid var(--black-2);
+}
+
+.range:nth-child(1){
+    border:none;
+}
+
+.skill03 .skill-range .range:nth-child(5){
+    background-color: #EDEFF3;
+    border-radius: 0 0.2vw 0.2vw 0;
+}
+
+.skill04 .skill-range .range:nth-child(4){
+    background-color: #EDEFF3;
+}
+
+.skill04 .skill-range .range:nth-child(5){
+    background-color: #EDEFF3;
+    border-radius: 0 0.2vw 0.2vw 0;
+}
+
+.skill07 .skill-range .range:nth-child(5){
+    background-color: #EDEFF3;
+    border-radius: 0 0.2vw 0.2vw 0;
+}
+
+.skill08 .skill-range .range:nth-child(4){
+    background-color: #EDEFF3;
+}
+
+.skill08 .skill-range .range:nth-child(5){
+    background-color: #EDEFF3;
+    border-radius: 0 0.2vw 0.2vw 0;
+}
+
+.skill09{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1vw;
+    color: #aaaaaa;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5vw 0;
+}
+
+.contact01{
+    padding-top: 1vw;
+}
+
+
+
+.conT{
+    font-family: "Termina Test", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 500;
+    line-height: 3vw;
+}
+
+.conT0{
+    background-color: var(--blue);
+    color: white;
+    padding: 0 0.5vw;
+    display: inline-block;
+    transform: rotate(-3deg);
+}
+
+.conC{
+    line-height: 0.5vw;
+    font-size: 0.9vw;
+    font-weight: 400;
+}
+
+.conC a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.conC a:hover{
+    background-color: var(--blue);
+    color: white;
+}
+
+.contact02{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--gray);
+    gap: 1.5vw;
+    padding: 1.5vw;
+    border-radius: 1vw;
+}
+
+.con02{
+    display: flex;
+    flex-direction: column;
+}
+
+.con02 p{
+    margin-top: 0;
+    margin-bottom: 0.5vw;
+    font-size: 0.9vw;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.name02{
+    grid-column: 1;
+}
+
+.email02{
+    grid-column: 2;
+}
+
+.message02{
+    grid-column: 1 / span 2;
+}
+
+.contact02 input,
+.contact02 textarea {
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    border:none;
+    /*background-color: var(--white);*/
+    color: var(--black);
+    font-family: 'pretendard', sans-serif;
+    font-size: 0.8vw;
+}
+
+.contact02 textarea {
+    height: 5vw;
+    resize: none;
+}
+
+.contact02 input:focus,
+.contact02 textarea:focus {
+    outline: 0.1vw solid var(--blue);
+}
+
+
+
+
+
+#sendBtn {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    font-size: 1.1vw;
+
+    width: 25%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5vw;
+    transition: all 0.1s ease;
+}
+
+#sendBtn:hover{
+    background-color: var(--blue);
+}
+
+.project{
+    padding: 5vw 0;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5vw;
+    margin-top: 2.5vw;
+    border-radius: 1vw;
+}
+
+.projectC{
+    background-color: var(--gray);
+    padding: 2vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.projectTitle img{
+    width: 100%;
+}
+
+.projectC:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);
+}
+
+.project-title-txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 1vw;
+}
+
+.pTitle{
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+.pTeam{
+    font-size: 0.8vw;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.projectTxt{
+    line-height: 1.5vw;
+}
+
+.projectDate{
+    font-size: 0.8vw;
+    color: var(--gray-2);
+    font-weight: 400;
+}
+
+.color0{
+    font-size: 0.9vw;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.projectAbout{
+    padding-bottom: 1vw;
+    font-size: 0.9vw;
+}
+
+.projectCode{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+}
+
+.code{
+    color: white;
+    font-weight: 400;
+    background-color: var(--blue);
+    padding: 0 0.5vw;
+    border-radius: 5vw;
+    font-size: 0.9vw;
+}
+
+.project03 .code:nth-child(4) {  /* JavaScript 다음에 줄바꿈 */
+    margin-right: 20%;
+}
+
+.project08{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2vw;
+    color: #aaaaaa;
+}
+
+
+
+
+/*--POP UP--*/
+
+/* Popup Background */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: var(--white);
+    padding: 2vw;
+    border-radius: 1vw;
+    width: 40vw;
+    height: 40vw;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Close Button */
+.popup-close {
+    position: absolute;
+    top: 1.5vw;
+    right: 1.5vw;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5vw;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.popup-close:hover {
+    background-color: black;
+}
+
+/* Popup Project Details */
+.popup-project-title {
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-bottom: 1.5vw;
+    color: var(--black);
+}
+
+.popup-project-image {
+    width: 100%;
+    margin-bottom: 2vw;
+    border-radius: 0.5vw;
+}
+
+.popup-project-info {
+    color: var(--black);
+    line-height: 1.6;
+    font-size: 1vw;
+}
+
+
+
+
+
+
+.popup-project-links {
+    display: flex;
+    gap: 1vw;
+    position: absolute;
+    top: 1.5vw;
+    right: 4.5vw;  /* X 버튼과의 간격 */
+}
+
+.detail-link {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: var(--blue);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw;
+    transition: all 0.2s ease;
+}
+
+.link-demo img{
+    width: 70%;
+    height: 70%;
+    transform: rotate(-45deg);
+}
+
+.link-github img {
+    width: 150%;
+    height: 150%;
+    filter: invert(1);  /* 깃허브 아이콘을 흰색으로 변경 */
+}
+
+.detail-link:hover {
+    background-color: black;
+}
+
+
+.detail-title {
+    font-size: 0.9vw;
+    font-weight: 500;
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+    width: 4vw;
+}
+
+.detail-text {
+    font-size: 0.85vw;
+    margin: 0;
+    padding: 0;
+}
+
+.detail-section:nth-child(3){
+    margin-bottom: 1.5vw;
+}
+
+.detail-section{
+    display: flex;
+    align-items: center;
+}
