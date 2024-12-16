@@ -99,15 +99,15 @@ footer{
 }
 
 .profile-txt{
-    font-weight: 300;
-    font-size: 0.95vw;
+    font-weight: 400;
+    font-size: 0.9vw;
     margin-bottom: 0.5vw;
     line-height: 1.5vw;
 }
 
 .bold{
-    font-weight: 400;
-    font-size: 1.1vw;
+    font-weight: 500;
+    font-size: 1vw;
 }
 
 .sidebar-menu {
@@ -159,6 +159,7 @@ footer{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     outline: 0.12vw solid var(--blue);
     color: var(--blue);
+    cursor: pointer;
 }
 
 #dark-mode img{
@@ -197,6 +198,7 @@ footer{
 .button-container button:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 0.12vw solid var(--blue);
+    cursor: pointer;
 }
 
 .mainTxt{
@@ -325,6 +327,7 @@ footer{
 .resume:hover{
     background-color: var(--blue);
     color: white;
+    cursor: pointer;
 }
 
 .about-grid{
@@ -402,6 +405,11 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover{
+    transform: scale(1.1);
 }
 
 .skillTxt{
@@ -483,6 +491,7 @@ footer{
 .contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5vw;
     padding: 5vw 0;
 }
 
@@ -505,6 +514,17 @@ footer{
     padding: 0 0.5vw;
     display: inline-block;
     transform: rotate(-3deg);
+}
+
+.conT00{
+    margin-top: 1.5vw;
+    color: var(--black);
+    font-size: 1vw;
+}
+
+.bold0{
+    font-weight: 500;
+    font-size: 1vw;
 }
 
 .conC{
@@ -563,7 +583,7 @@ footer{
     border-radius: 0.5vw;
     border:none;
     /*background-color: var(--white);*/
-    color: var(--black);
+    color: black;
     font-family: 'pretendard', sans-serif;
     font-size: 0.8vw;
 }
@@ -633,6 +653,7 @@ footer{
 .projectC:hover{
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
     transform: scale(1.03);
+    cursor: pointer;
 }
 
 .project-title-txt{
